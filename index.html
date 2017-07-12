@@ -1,37 +1,116 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./static/styles.css"/>
-        <script src="./static/script.js"></script>
-        <title>Briggs McKnight</title>
-    </head>
-    <body>
-        <div class="slideshow" id="slideshow">
-	<ol class="slides">
-		<li class="current">
-			<div class="description">
-				<h2>Some Title</h2>
-				<p>Some description</p>
-			</div>
-			<div class="tiltview col">
-				<a href="http://grovemade.com/"><img src="./static/planet.jpg"/></a>
-				<a href="https://tsovet.com/"><img src="./static/water.jpg"/></a>
-                <a href="https://tsovet.com/"><img src="./static/4237670-images.jpg"/></a>
-			</div>
-		</li>
-		<li>
-			<div class="description">
-				<!-- ... -->
-			</div>
-			<div class="tiltview row">
-				<!-- ... -->
-			</div>
-		</li>
-		<li>
-			<!-- ... -->
-		</li>
-	</ol>
-</div>
-    </body>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Briggs McKnight</title>
+		<meta name="description" content="Briggs McKnight: Full Stack Developer & Programmer" />
+		<meta name="keywords" content="Briggs, McKnight, developer, programmer, front-end, web design" />
+		<meta name="Briggs" content="Portfolio Page" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="slideshow" id="slideshow">
+				<ol class="slides">
+					<li class="current">
+						<div class="description">
+							<h2>Briggs McKnight</h2>
+							<p>Full Stack Developer & Programmer</p>
+							<a href="https://github.com/Briggs-Py">GitHub Account</a><br>
+							<a href="https://www.linkedin.com/in/briggs-mcknight-6399b882/">LinkedIn</a><br>
+							<a href="BriggsMcKnightResume.pdf">Resume</a>
+							<p><span>Phone: 904-206-3978<br> Email: briggs.mcknight@gmail.com</span></p>
+						</div>
+						<div class="tiltview col">
+							<a href="https://github.com/ISAACLA/SoccerZone"><img src="img/SoccerZoneMain.png"/></a>
+							<a href="https://code.sololearn.com/ci42wd5h0UQX/#py"><img src="img/soccerSim.png"/></a>
+						</div>
+					</li>
+
+					<li>
+						<div class="description">
+							<h2>Dojo & Dragons</h2>
+							<p>This Django project is a Dungeons & Dragons influenced forum website meant for students to plan DnD games. Contains a store component with the Stripe API, a compendium using a 3rd party DnD API, and a character creation section.</p>
+						</div>
+						<div class="tiltview col">
+							<a href="http://minimalmonkey.com/"><img src="img/dndCompendium.png"/></a>
+							<a href="http://www.herschelsupply.com/"><img src="img/dndMain.png"/></a>
+						</div>
+					</li>
+
+					<li>
+						<div class="description">
+							<h2>SoccerZone</h2>
+							<p>MEAN based project designed for soccer players and fans to create local events and teams. Uses the Google Maps API for event and team location, Message Boards for communication, and a responive web design for viewing on all devices.</p>
+						</div>
+						<div class="tiltview row">
+							<a href="https://github.com/ISAACLA/SoccerZone"><img src="img/soccerDash.png"/></a>
+							<a href="https://github.com/ISAACLA/SoccerZone"><img src="img/soccerEvent.png"/></a>
+						</div>
+					</li>
+					<li>
+						<div class="description">
+							<h2>Soccer Game Simulation</h2>
+							<p>A small algorithm in python that simulates a soccer match against Arsenal and Chelsea. Currently creating a website that could simulate an entire English Premier Leauge season.</p>
+						</div>
+						<div class="tiltview col">
+							<a href="https://code.sololearn.com/ci42wd5h0UQX/#py"><img src="img/soccerSim.png"/></a>
+						</div>
+					</li>
+					<li>
+						<div class="description">
+							<h2>GitHub & LinkedIn</h2>
+							<p>Check out my GitHub and LinkedIn accounts for more infomation about me and my programming career.</p>
+						</div>
+						<div class="tiltview col">
+							<a href="https://github.com/Briggs-Py"><img src="img/github.png"/></a>
+							<a href="https://www.linkedin.com/in/briggs-mcknight-6399b882/"><img src="img/linked.png"/></a>
+						</div>
+					</li>
+				</ol>
+			</div><!-- /slideshow -->
+			<header class="codrops-header">
+				<h1> Programming Languages, Skills, and Tools<span>JavaScript, JQuery, ES6, Angular 2, MongoDB, Node.js, Express, Python, Django, mySQL, GitHub, Amazon Web Services, iOS, Swift, Xcode, Bootstrap, CSS3, HTML5 </span></h1>
+			</header>
+			<!-- <section class="related">
+				<p>Screenshots from SoccerZone</p>
+				<img style="width: 500px; height: 350px;" src="img/SoccerZoneMain.png"/>
+				<h3>Opening Page</h3>
+				<img style="width: 500px; height: 350px;" src="img/SoccerZoneLocal.png"/>
+				<h3>Main Local Page</h3>
+			</section> -->
+			<section class="related">
+				<img id="aboutPic" src="img/profile.jpg" alt="">
+
+				<p>About Me</p>
+				<p><span>Skilled worker, team player, and goal driven.
+When specific goals and deadlines are given, I get the work done, get it done right (or to the best of my ability), and i get it done on time.
+I love to work with teams as I have a team mentality. I know how to get along well with others, have rational discussions, vocalize my true opinion, help others learn and succeed, take criticism, and be respectful. I love working in a group, but also like going off and working on assignments solo.
+I love to work for a company or business whose vision and ideals match with mine. If I can see the value you give to others and/or the world and I believe in your vision then you can expect me to be a loyal employee for years to come.
+I'm consistently learning new skills in the field and working on new projects. I pride myself in becoming highly skilled in programming and will continue to improve my ability. I currently enjoy programming in javascript and using it in web development. Will eventually want to learn either machine-learning, neural networks, and/or AR/VR technologies.</span></p>
+			</section>
+
+		</div>
+		<footer class="foot">
+			<h5>Contact Info</h5>
+			<p> ✆ 904-206-3978</p>
+			<p> ✉︎ briggs.mcknight@gmail.com</p>
+		</footer><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/tiltSlider.js"></script>
+		<script src="js/carousel.js"></script>
+		<script>
+			new TiltSlider( document.getElementById( 'slideshow' ) );
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+	</body>
 </html>
