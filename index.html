@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<script src="js/modernizr.custom.js"></script>
 
 	</head>
@@ -33,7 +34,15 @@
 							<a href="https://code.sololearn.com/ci42wd5h0UQX/#py"><img src="img/soccerSim.png"/></a>
 						</div>
 					</li>
-
+					<li>
+						<div class="description">
+							<h2>XXY Inc.</h2>
+							<p>A modern ecommerce clothing store built in Django. Uses the CSS-Grid for most styling in the Front-end. Responsive, ready to use website.</p>
+						</div>
+						<div class="tiltview col">
+							<a href="https://github.com/adwait1290/ecommerce"><img src="img/xxyMain.jpg"/></a>
+						</div>
+					</li>
 					<li>
 						<div class="description">
 							<h2>Dojo & Dragons</h2>
@@ -81,6 +90,20 @@
 					Node.js, Express, Python, Django, mySQL, GitHub, Amazon Web Services, iOS, Swift, Xcode,
 					Bootstrap, CSS3, HTML5 </span></h1>
 			</header>
+			<h2 style="text-align: center">Gallery</h2>
+			<div style="width: 70%; min-width: 300px;" class="w3-content w3-display-container">
+			  <img class="mySlides" src="img/xxyMain.jpg" style="margin: auto; width:300px">
+			  <img class="mySlides" src="img/xxyCart.jpg" style="width:100%">
+			  <img class="mySlides" src="img/xxyDetails.jpg" style="width:100%">
+			  <img class="mySlides" src="img/soccerZoneMain.png" style="width:100%">
+			  <img class="mySlides" src="img/soccerZoneLocal.png" style="width:100%">
+			  <img class="mySlides" src="img/soccerDash.png" style="margin: auto; width:300px">
+			  <img class="mySlides" src="img/dndCompendium.png" style="width:100%">
+			  <img class="mySlides" src="img/dndMain.png" style="width:100%">
+
+			  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
 			<!-- <section class="related">
 				<p>Screenshots from SoccerZone</p>
 				<img style="width: 500px; height: 350px;" src="img/SoccerZoneMain.png"/>
@@ -103,9 +126,28 @@
 		</div>
 		<footer class="foot">
 			<h5>Contact Info</h5>
-			<p> ✆ 904-206-3978</p>
-			<p> ✉︎ briggs.mcknight@gmail.com</p>
+			<p> ✆ 904-206-3978 <br>
+			 ✉︎ briggs.mcknight@gmail.com</p>
 		</footer><!-- /container -->
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";
+			  }
+			  x[slideIndex-1].style.display = "block";
+			}
+		</script>
 		<script src="js/classie.js"></script>
 		<script src="js/tiltSlider.js"></script>
 		<script src="js/carousel.js"></script>

@@ -33,12 +33,6 @@ a:hover, a:focus {
 	color: #e88565;
 }
 
-code {
-	opacity: 0.7;
-	white-space: nowrap;
-	padding: 0 7px;
-	background: rgba(0,0,0,0.08);
-}
 
 .codrops-header {
 	margin: 0 auto;
@@ -60,41 +54,19 @@ code {
 	opacity: 0.7;
 }
 
-/* To Navigation Style */
-.codrops-top {
-	width: 100%;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 0.69em;
-	line-height: 2.2;
-	text-align: center;
+/*Gallery*/
+.gallery{
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: end;
+	margin-top: 50px;
 }
-
-.codrops-top a {
-	display: block;
-	padding: 0 1em;
-	text-decoration: none;
-	letter-spacing: 1px;
-}
-
-.codrops-icon:before {
-	margin: 0 4px;
-	text-transform: none;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-family: 'codropsicons';
-	line-height: 1;
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-}
-
-.codrops-icon-drop:before {
-	content: "\e001";
-}
-
-.codrops-icon-prev:before {
-	content: "\e004";
+.gallery > img {
+	border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    width: 100%;
+	height: 100%;
 }
 
 /* Related demos */
@@ -142,6 +114,10 @@ code {
 	text-align: left;
 }
 
+.related p{
+	margin-bottom: 50px;
+}
+
 .foot{
 	background-color: rgba(180, 180, 180, 0.3);
 	border-top: 1px solid #aaa;
@@ -153,9 +129,14 @@ code {
 	left: 0;
 }
 
-.foot h5, p{
-	margin: 3px;
+.foot h5{
+	margin-top: 15px;
+	margin-bottom: 3px;
 
+}
+.foot p{
+	margin-top: 0px;
+	margin-bottom: 15px;
 }
 
 #cdawrap {
@@ -167,4 +148,8 @@ code {
 	width: 200px;
 	height: 200px;
 	border-radius: 100px;
+}
+
+@media(min-width: 900px ){
+
 }
