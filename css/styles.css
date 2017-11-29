@@ -4,6 +4,15 @@ html, body {
   font-family: "Ubuntu", sans-serif;
 }
 
+h2 > a{
+  color: white;
+  text-decoration: none;
+}
+
+h2 > a:hover{
+  text-decoration: underline;
+}
+
 section > p {
   text-align: center;
   margin: 10px 50px;
@@ -527,7 +536,7 @@ iframe {
 }
 
 
-@media(max-width: 350px) {
+@media(max-width: 380px) {
 
   .content-w > a > img {
     width: 260px;
@@ -535,6 +544,7 @@ iframe {
 
   .content-h > a > img {
     width: 140px;
+    margin-left: 5px;
   }
 
   iframe {
