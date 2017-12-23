@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 h2 > a{
@@ -64,7 +64,7 @@ iframe {
 }
 
 #main {
-  background: url('../img/purple-abstract-blur.jpg');
+  background: url('../img/mainBackground.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,15 +143,16 @@ iframe {
 
 .description > h1 {
   font-size: 2.7em;
+  font-weight: bold;
 }
 
 .description > a {
-  color: #666;
+  color: #ddd;
   text-decoration: none;
 }
 
 .description > a:hover {
-  color: #69c;
+  color: #259;
 }
 
 .content {
@@ -220,9 +221,9 @@ iframe {
   position: absolute;
   border-radius: 10px;
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
+  -moz-: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
-  z-index: 0;
+  z-index: 1;
 }
 
 /* Since inset shadows don't play nice with images, we'll create a pseudo element and apply our image styling to that instead */
@@ -244,20 +245,22 @@ iframe {
 }
 
 #scroller .left {
-  -webkit-transform: rotateY(5deg) translateX(-250px) scale(0.6);
+  z-index:0;
+  -webkit-transform: translate3d(0,0,0) rotateY(5deg) translateX(-250px) scale(0.6);
   -moz-transform: rotateY(5deg) translateX(-250px) scale(0.6);
   -o-transform: rotateY(5deg) translateX(-250px) scale(0.6);
 }
 
 #scroller .middle {
   z-index:1;
-  -webkit-transform: rotateY(0deg) translateX(0) scale(1);
+  -webkit-transform: translate3d(0,0,17px) rotateY(0deg) translateX(0) scale(1);
   -moz-transform: rotateY(0deg) translateX(0) scale(1);
   -o-transform: rotateY(0deg) translateX(0) scale(1);
 }
 
 #scroller .right {
-  -webkit-transform: rotateY(-5deg) translateX(250px) scale(0.6);
+  z-index:0;
+  -webkit-transform: translate3d(0,0,0) rotateY(-5deg) translateX(250px) scale(0.6);
   -moz-transform: rotateY(-5deg) translateX(250px) scale(0.6);
   -o-transform: rotateY(-5deg) translateX(250px) scale(0.6);
 }
@@ -560,6 +563,11 @@ iframe {
     -webkit-transform: rotateY(5deg) translateX(-70px) scale(0.6);
     -moz-transform: rotateY(5deg) translateX(-70px) scale(0.6);
     -o-transform: rotateY(5deg) translateX(-70px) scale(0.6);
+  }
+
+  #scroller .middle {
+    z-index:1;
+    -webkit-transform: translate3d(0,0,10px) rotateY(0deg) translateX(0) scale(1);
   }
 
   #scroller .right {
