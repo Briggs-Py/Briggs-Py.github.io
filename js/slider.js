@@ -38,14 +38,14 @@ function scroll(direction) {
 $(document).ready(function() {
 
   assignPositions();
-  var autoScroll = window.setInterval("scroll('next')", 10000);
+  var autoScroll = window.setInterval("scroll('next')", 3000);
 
   /* Hover behaviours */
   $('#scroller').hover(function() {
       window.clearInterval(autoScroll);
       $('.nav').stop(true, true).fadeIn(200);
   }, function() {
-      autoScroll = window.setInterval("scroll('next')", 10000);
+      autoScroll = window.setInterval("scroll('next')", 3000);
       $('.nav').stop(true, true).fadeOut(200);
   });
 
