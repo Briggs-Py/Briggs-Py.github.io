@@ -64,11 +64,18 @@ iframe {
 }
 
 #main {
-  background: url('../img/mainBackground.jpg');
+  background: url('../img/black-abstract.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+#cliiiques {
+  background: url('../img/cliiiques-banner-blur.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #music {
@@ -128,9 +135,8 @@ iframe {
   background-size: cover;
 }
 
-#black {
+.black {
   color: black;
-
 }
 
 .description {

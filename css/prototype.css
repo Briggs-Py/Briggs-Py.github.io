@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(to bottom right, #6bc0e4 , #eaecc6)
+}
+.container {
+  border: 1px solid lavenderblush;
+  min-height: 1000px;
+  margin: 50px;
+}
+
+.tinter {
+  opacity: 0.5;
+  background-color: #000;
+}
